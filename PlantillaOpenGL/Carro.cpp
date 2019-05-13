@@ -6,6 +6,10 @@ void Carro::actualizarMatrizModelo() {
 	modelo = translate(modelo, coordenadas);
 }
 
+vec3 Carro::getCoordenadas() {
+	return coordenadas;
+}
+
 void Carro::avanzar() {
 	coordenadas.z += 0.01;
 	actualizarMatrizModelo();
